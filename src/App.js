@@ -1,17 +1,27 @@
 import React, { Component } from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from 'react-router-dom';
+
+import routes from './config/routes';
+
+import Home from './components/Home';
+import ManageLocks from './components/ManageLocks';
+import NotFound from './components/NotFound';
 
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <header>
-          <h1>React Boilerplate</h1>
-        </header>
-        <p>
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <Router>
+        <Switch>
+          <Route exact path={routes.Home} component={Home} />
+          <Route path={routes.ManageLocks} component={ManageLocks} />
+          <Route component={NotFound} />
+        </Switch>
+      </Router>
     );
   }
 }
