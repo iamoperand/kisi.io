@@ -1,0 +1,5 @@
+const VIEW_CURRENT_USER_LOCKS = 'VIEW_CURRENT_USER_LOCKS';
+
+export const locksActions = {
+  VIEW_CURRENT_USER_LOCKS,
+};
