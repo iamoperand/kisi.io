@@ -1,4 +1,4 @@
-import ManageLocks from './ManageLocks';
+import ManageLocksContainer from './ManageLocksContainer';
 
 
-export default ManageLocks;
+export default ManageLocksContainer;

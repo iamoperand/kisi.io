@@ -5,7 +5,7 @@ class NotFound extends Component {
   render() {
     return (
       <div>
-        This page doesn&pos;t exist!
+        This page doesn&apos;t exist!
       </div>
     );
   }
